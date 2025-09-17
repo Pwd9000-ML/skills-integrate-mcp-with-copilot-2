@@ -63,6 +63,13 @@ activities = {
         "max_participants": 20,
         "participants": ["ella@mergington.edu", "scarlett@mergington.edu"]
     },
+
+    "GitHub Skills": {
+        "description": "Hands-on GitHub skills workshops: git, collaboration, and CI/CD.",
+        "schedule": "Fridays, 3:30 PM - 5:00 PM",
+        "max_participants": 25,
+        "participants": []
+    },
     "Math Club": {
         "description": "Solve challenging problems and participate in math competitions",
         "schedule": "Tuesdays, 3:30 PM - 4:30 PM",
@@ -130,3 +137,4 @@ def unregister_from_activity(activity_name: str, email: str):
     # Remove student
     activity["participants"].remove(email)
     return {"message": f"Unregistered {email} from {activity_name}"}
+
